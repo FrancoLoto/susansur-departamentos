@@ -39,7 +39,7 @@ const imagenes = [
     },
 ]
 
-function Galeria() {
+function Galeria({ galeryRef }) {
     const [currentIndex, setCurrentIndex] = useState(0);
 
     const handlePrevClick = () => {
@@ -52,8 +52,8 @@ function Galeria() {
 
     return(
         <>
-        <div className="bg-terciario">
-            <h2 className="pt-10 pb-10 text-4xl text-center text-secundario font-principal">
+        <div className="bg-terciario pb-2" ref={galeryRef}>
+            <h2 className="pt-10 pb-10 lg:text-4xl md:text-4xl text-3xl text-center text-secundario font-principal">
                 Galería
             </h2>
             <div id="default-carousel" className="relative w-full" data-carousel="slide">

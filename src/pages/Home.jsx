@@ -6,18 +6,32 @@ import Navbar from "../components/navigation/Navbar"
 import Layout from "../hocs/Layout"
 import Galeria from "../components/home/Galeria"
 import MapaGoogle from "../components/home/MapaGoogle"
+import Header from "../components/navigation/Header"
+import CTA from "../components/home/CallToAction"
+import { useRef } from "react"
+import WidgetClima from "../components/home/WidgetClima"
 
 
 function Home() {
+    const serviceRef = useRef(null)
+    const galeryRef = useRef(null)
+    const ubiRef = useRef(null)
+
     return(
         <Layout>
-            <Navbar />
+            <Header />
+            <Navbar serviceRef={serviceRef} galeryRef={galeryRef} ubiRef={ubiRef}/>
             <div className="pt-44">
                 <HeroSection />
-                <Servicios />
-                <Galeria />
+                <Servicios serviceRef={serviceRef}/>
+                <Galeria galeryRef={galeryRef}/>
+                <CTA />
                 <MapaLasGrutas />
-                <MapaGoogle />
+                <WidgetClima />
+                <MapaGoogle ubiRef={ubiRef}/>
+                <div className="pb-12 bg-primario">
+                <CTA/>
+                </div>
             </div>
             
             <Footer />

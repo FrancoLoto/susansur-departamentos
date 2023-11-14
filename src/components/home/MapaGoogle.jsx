@@ -1,10 +1,10 @@
 
 
-function MapaGoogle() {
+function MapaGoogle({ ubiRef }) {
     return(
         <div>
-            <div className="bg-terciario w-full">
-                <h2 className="pt-10 pb-10 text-4xl text-center text-secundario font-principal">
+            <div className="bg-terciario w-full" ref={ubiRef}>
+                <h2 className="pt-10 pb-10 lg:text-4xl md:text-4xl text-3xl text-center text-secundario font-principal">
                     Ubicación
                 </h2>
             </div>
