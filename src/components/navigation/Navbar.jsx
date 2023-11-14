@@ -37,19 +37,19 @@ function Navbar({ serviceRef, galeryRef, ubiRef }) {
 
                 <ul className='flex '>
                         <li 
-                          className='lg:text-2xl md:text-xl font-secundaria cursor-pointer mx-3 my-5 text-white border-b-2 border-transparent hover:border-terciario transition duration-300 ease-in-out'
+                          className='lg:text-2xl md:text-xl font-secundaria cursor-pointer mx-3 my-5 text-white border-b-2 border-transparent hover:border-sexto transition duration-300 ease-in-out'
                           onClick={() => executeScroll(serviceRef)}
                         >
                             Servicios
                         </li>
                         <li 
-                          className='lg:text-2xl md:text-xl font-secundaria cursor-pointer mx-3 my-5 text-white border-b-2 border-transparent hover:border-terciario transition duration-300 ease-in-out'
+                          className='lg:text-2xl md:text-xl font-secundaria cursor-pointer mx-3 my-5 text-white border-b-2 border-transparent hover:border-sexto transition duration-300 ease-in-out'
                           onClick={() => executeScroll(galeryRef)}
                         >
                             Galería
                         </li>
                         <li 
-                          className='lg:text-2xl md:text-xl font-secundaria cursor-pointer mx-3 my-5 text-white border-b-2 border-transparent hover:border-terciario transition duration-300 ease-in-out'
+                          className='lg:text-2xl md:text-xl font-secundaria cursor-pointer mx-3 my-5 text-white border-b-2 border-transparent hover:border-sexto transition duration-300 ease-in-out'
                           onClick={() => executeScroll(ubiRef)}
                         >
                             Ubicación
